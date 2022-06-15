@@ -2,10 +2,54 @@ body {
     padding: 0;
     margin: 0;
     padding-top: 100px;
-    width: 100vw;    
+    width: 100vw;  
+    background-color:rgb(25, 33, 41);
 
 }
 
 #form-container {
     margin: auto;
+    width:250px;
+    box-sizing: border-box;
+    padding:20px; 
+    border:1px solid rgb(67, 163, 230);
+    color:rgb(255,255,255);
 }
+#form-container fieldset {
+    margin:0 0 5px 0 ;
+    padding:0;
+    border:none;
+    width:100%;
+}
+#form-container label  {
+    display:inline-block;
+    margin-bottom:5px;
+}
+#form-container input[type="text"],
+#form-container input[type="email"],
+#form-container textarea {
+    display:block;
+    width:150px; 
+    padding:4px 10px; 
+
+}
+#form-container input:not([type="submit"]) {
+    background-color: #fff;
+    border-radius:2px;
+    border:1px solid rgb(67, 163, 230);
+
+}
+#form-container input[type="submit"]{
+    color:rgb(255,255,255);
+    background-color:rgb(67, 163, 230);
+    border:none;
+    border-radius:10px;
+    padding:4px 10px; 
+} 
+
+
+/*Colors
+ 
+Dark Blue: rgb(25, 33, 41)
+Light Blue:  rgb(67, 163, 230)
+Text: rgb(255,255,255)*/

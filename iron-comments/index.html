@@ -11,8 +11,25 @@
 </head>
 <body>
 
-    <form id="form-container">
-        Name: Email: Comment: Receive email updates? Submit
+    <form id="form-container"  action="/register" method="post">
+        <!-- Name: Email: Comment: Receive email updates? Submit -->
+        <fieldset>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+        </fieldset>  
+        <fieldset>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" />
+        </fieldset> 
+        <fieldset>
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment" rows="10" cols="auto"></textarea>
+        </fieldset> 
+        <fieldset>
+            <label for="updates">Receive email updates? </label>
+            <input type="checkbox" name="updates" id="updates" value="updates-ok"/> 
+        </fieldset> 
+        <input type="submit" value="submit"></input>
     </form>
 
 </body>
